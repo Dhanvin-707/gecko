@@ -1,32 +1,28 @@
-# dependencies
+# ─── Dependencies ─────────────────────────────────────────────────────────────
 node_modules/
-.pnp
-.pnp.*
 
-# next.js
+# ─── Next.js ──────────────────────────────────────────────────────────────────
 .next/
 out/
+next-env.d.ts
+
+# ─── Build artifacts ──────────────────────────────────────────────────────────
 dist/
-build/
 *.tsbuildinfo
 
-# env - never commit secrets
+# ─── Environment files ────────────────────────────────────────────────────────
+.env
 .env.local
 .env.*.local
-*.env.local
-apps/web/.env.local
+# Keep the example committed:
+!.env.example
 
-# logs
-*.log
-npm-debug.log*
-pnpm-debug.log*
+# ─── Test artifacts ───────────────────────────────────────────────────────────
+playwright-report/
+test-results/
+coverage/
 
-# OS / editor
+# ─── OS / editor ──────────────────────────────────────────────────────────────
 .DS_Store
-*.pem
-.vscode/
-.idea/
-
-# supabase local
-supabase/.branches
-supabase/.temp
+Thumbs.db
+.vscode/settings.json

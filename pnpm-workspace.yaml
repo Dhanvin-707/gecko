@@ -1,4 +1,7 @@
 packages:
   - 'apps/*'
   - 'packages/*'
-approveBuilds: all
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - unrs-resolver
