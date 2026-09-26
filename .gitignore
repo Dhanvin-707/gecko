@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# next.js
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# env - never commit secrets
+.env.local
+.env.*.local
+*.env.local
+apps/web/.env.local
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+*.pem
+.vscode/
+.idea/
+
+# supabase local
+supabase/.branches
+supabase/.temp
